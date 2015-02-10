@@ -14,6 +14,8 @@
 		634E53D01A885C5C00299CCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634E53CF1A885C5C00299CCC /* Images.xcassets */; };
 		634E53D31A885C5C00299CCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634E53D11A885C5C00299CCC /* LaunchScreen.xib */; };
 		634E53DF1A885C5C00299CCC /* rollrollrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634E53DE1A885C5C00299CCC /* rollrollrollTests.m */; };
+		634E53E91A888A7900299CCC /* tada.wav in Resources */ = {isa = PBXBuildFile; fileRef = 634E53E81A888A7900299CCC /* tada.wav */; };
+		634E53EB1A888AEC00299CCC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634E53EA1A888AEC00299CCC /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		634E53D81A885C5C00299CCC /* rollrollrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rollrollrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634E53DD1A885C5C00299CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634E53DE1A885C5C00299CCC /* rollrollrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rollrollrollTests.m; sourceTree = "<group>"; };
+		634E53E81A888A7900299CCC /* tada.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tada.wav; sourceTree = "<group>"; };
+		634E53EA1A888AEC00299CCC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634E53EB1A888AEC00299CCC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 		634E53B61A885C5C00299CCC = {
 			isa = PBXGroup;
 			children = (
+				634E53EA1A888AEC00299CCC /* AudioToolbox.framework */,
 				634E53C11A885C5C00299CCC /* rollrollroll */,
 				634E53DB1A885C5C00299CCC /* rollrollrollTests */,
 				634E53C01A885C5C00299CCC /* Products */,
@@ -96,6 +102,7 @@
 		634E53C21A885C5C00299CCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				634E53E81A888A7900299CCC /* tada.wav */,
 				634E53C31A885C5C00299CCC /* Info.plist */,
 				634E53C41A885C5C00299CCC /* main.m */,
 			);
@@ -201,6 +208,7 @@
 			files = (
 				634E53CE1A885C5C00299CCC /* Main.storyboard in Resources */,
 				634E53D31A885C5C00299CCC /* LaunchScreen.xib in Resources */,
+				634E53E91A888A7900299CCC /* tada.wav in Resources */,
 				634E53D01A885C5C00299CCC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +356,7 @@
 				INFOPLIST_FILE = rollrollroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -358,6 +367,7 @@
 				INFOPLIST_FILE = rollrollroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -414,6 +424,7 @@
 				634E53E41A885C5C00299CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		634E53E51A885C5C00299CCC /* Build configuration list for PBXNativeTarget "rollrollrollTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +433,7 @@
 				634E53E71A885C5C00299CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
