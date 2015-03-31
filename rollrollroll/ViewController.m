@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIButton+Custom.h"
 
 @interface ViewController () {
      NSArray *_pickerData;
@@ -32,9 +33,10 @@
     
     _celerbrateLabel.hidden = YES;
     
-     _pickerData = @[@"김순호",@"노윤희",@"신기섭",@"윤보영",@"이종훈", @"이지은", @"이혜림", @"정재학",@"한재철",@"노윤희",@"김순호",@"윤보영",@"신기섭", @"이지은", @"이종훈", @"정재학",@"이혜림",@"한재철",@"노윤희",@"신기섭",@"김순호",@"이종훈", @"이지은", @"윤보영", @"정재학",@"한재철",@"이혜림"];
+     _pickerData = @[@"김순호",@"노윤희",@"신기섭",@"윤보영",@"이종훈", @"이지은", @"이혜림",@"한재철"];
     
     actual_length = (int)_pickerData.count;
+    [[self goButton] defaultStyle];
 }
 
 - (void)didReceiveMemoryWarning {
