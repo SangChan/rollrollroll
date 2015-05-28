@@ -33,7 +33,7 @@
     
     _celerbrateLabel.hidden = YES;
     
-     _pickerData = @[@"김순호",@"노윤희",@"이종훈", @"이지은", @"이혜림",@"한재철"];
+     _pickerData = @[];
     
     actual_length = (int)_pickerData.count;
     [[self goButton] defaultStyle];
